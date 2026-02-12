@@ -1,0 +1,65 @@
+body {
+  margin:0;
+  font-family: Arial;
+  text-align:center;
+  background: radial-gradient(circle,#2b1055,#000);
+  color:white;
+  overflow:hidden;
+}
+
+#game {
+  width:300px;
+  height:120px;
+  border-bottom:3px solid white;
+  margin:auto;
+  position:relative;
+  overflow:hidden;
+}
+
+#cat {
+  position:absolute;
+  bottom:0;
+  font-size:40px;
+}
+
+.jump {
+  animation: jump 0.7s;
+}
+
+@keyframes jump {
+  0%{bottom:0;}
+  50%{bottom:70px;}
+  100%{bottom:0;}
+}
+
+#obstacle {
+  position:absolute;
+  bottom:0;
+  right:-40px;
+  font-size:30px;
+  animation: move 1.5s linear infinite;
+}
+
+@keyframes move {
+  from{right:-40px;}
+  to{right:320px;}
+}
+
+button {
+  padding:15px 25px;
+  font-size:20px;
+  border:none;
+  border-radius:12px;
+  margin:10px;
+  cursor:pointer;
+}
+
+#yes {
+  background:#ff4da6;
+  color:white;
+}
+
+#no {
+  position:absolute;
+  background:white;
+}
